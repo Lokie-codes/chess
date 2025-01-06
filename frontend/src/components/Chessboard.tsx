@@ -2,7 +2,7 @@
 
 import React, { JSX, useState } from 'react';
 import ChessSquare from './ChessSquare';
-import { BOARD_BREADTH, BOARD_LENGTH } from '@/app/constants';
+import { BOARD_BREADTH, BOARD_LENGTH, SQUARE_SIZE } from '@/app/constants';
 
 // Component to create the chess board
 const Chessboard = () => {
@@ -24,6 +24,7 @@ const Chessboard = () => {
                         isDark={(row + col) % 2 === 0}
                         row={row}
                         col={col}
+                        squareSize={SQUARE_SIZE}
                         isSelected={selectedSquare?.row === row && selectedSquare?.col === col}
                         onSquareClick={handleSquareClick}
                     />
