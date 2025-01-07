@@ -11,7 +11,7 @@ export default {
       colors: {
         // Light theme colors
         "white-square": "#ede8d0", // Light square color (for light theme)
-        "white-square-highlight": "#c9c5b1", // Highlighted light square
+        "white-square-highlight": "#adaa99", // Highlighted light square
 
         "black-square": "#787569", // Dark square color (for light theme)
         "black-square-highlight": "#4f4d46", // Highlighted dark square

@@ -10,7 +10,7 @@ interface SquareProps {
 }
 
 const ChessSquare: React.FC<SquareProps> = ({ isDark, row, col, isSelected, squareSize, onSquareClick }) => {
-    const squareClasses = `${isDark ? "bg-black-square dark:bg-dark-black-square hover:bg-dark-black-square-highlight" : "bg-white-square dark:bg-dark-white-square hover:bg-dark-white-square-highlight"} ${isSelected ? "border-4 border-blue-500 scale-105" : ""} flex cursor-pointer w-16 h-16 rounded-sm shadow-sm transition-all ease-in-out duration-200`;
+    const squareClasses = `${isDark ? "bg-black-square hover:bg-black-square-highlight dark:bg-dark-black-square dark:hover:bg-dark-black-square-highlight" : "bg-white-square dark:bg-dark-white-square hover:bg-white-square-highlight dark:hover:bg-dark-white-square-highlight"} ${isSelected ? "border-4 border-blue-500 scale-105" : ""} flex cursor-pointer w-16 h-16 rounded-sm shadow-sm transition-all ease-in-out duration-200`;
 
     return (
         <div
