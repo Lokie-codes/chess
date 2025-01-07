@@ -41,7 +41,7 @@ const Chessboard = () => {
     };
 
     return (
-        <div className="flex border-8 rounded-sm w-fit border-dark-highlight">
+        <div className="flex border-8 rounded-sm w-fit border-black-square-highlight">
             {renderBoard()}
         </div>
     );
