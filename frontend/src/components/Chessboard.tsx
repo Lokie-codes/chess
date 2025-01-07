@@ -5,15 +5,15 @@ import ChessSquare from './ChessSquare';
 import { BOARD_BREADTH, BOARD_LENGTH, SQUARE_SIZE } from '@/app/constants';
 
 const initialBoardState = [
-    ["wRook", "wKnight", "wBishop", "wQueen", "wKing", "wBishop", "wKnight", "wRook"],
-    ["wPawn", "wPawn", "wPawn", "wPawn", "wPawn", "wPawn", "wPawn", "wPawn"],
+    ["bRook", "bKnight", "bBishop", "bKing", "bQueen", "bBishop", "bKnight", "bRook"],
+    ["bPawn", "bPawn", "bPawn", "bPawn", "bPawn", "bPawn", "bPawn", "bPawn"],
     // Empty rows
     Array(8).fill(null),
     Array(8).fill(null),
     Array(8).fill(null),
     Array(8).fill(null),
-    ["bPawn", "bPawn", "bPawn", "bPawn", "bPawn", "bPawn", "bPawn", "bPawn"],
-    ["bRook", "bKnight", "bBishop", "bQueen", "bKing", "bBishop", "bKnight", "bRook"],
+    ["wPawn", "wPawn", "wPawn", "wPawn", "wPawn", "wPawn", "wPawn", "wPawn"],
+    ["wRook", "wKnight", "wBishop", "wQueen", "wKing", "wBishop", "wKnight", "wRook"],
 ];
 
 
@@ -32,7 +32,7 @@ const Chessboard = () => {
         for (let row = 0; row < BOARD_LENGTH; row++) {
             const boardRow: JSX.Element[] = [];
             for (let col = 0; col < BOARD_BREADTH; col++) {
-                const piece = boardState[row][col];
+                const piece = boardState[col][row];
                 boardRow.push(
                     <ChessSquare
                         key={`${row}-${col}`}
