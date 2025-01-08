@@ -38,7 +38,7 @@ const Chessboard = () => {
 
                 setBoardState(updatedBoardState);
             }
-            setSelectedSquare(null);
+            setBoardState(null);
         } else {
             const piece = boardState[col][row];
             if(piece) {
